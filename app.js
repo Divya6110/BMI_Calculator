@@ -8,7 +8,7 @@ app.get('/',function(req,res){
 app.post('/', function(req, res){
     const h = parseFloat( req.body.height)
     const w = parseFloat( req.body.weight)
-    const bmi = w /(h*h)
+    var bmi = w /(h*h)
     bmi= bmi.toFixed()
     const req_name=req.body.Name
     res.send(`<h1>Hello ${req_name}, Your BMI Around:${bmi} kg/m^2</h1>`)
