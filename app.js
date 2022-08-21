@@ -11,7 +11,9 @@ app.post('/', function(req, res){
     var bmi = w /(h*h)
     bmi= bmi.toFixed()
     const req_name=req.body.Name
-    res.send(`<h1>Hello ${req_name}, Your BMI Around:${bmi} kg/m^2</h1>`)
+    res.send(`<h1>Hello ${req_name}, 
+    Your BMI Around:${bmi} kg/m^2</h1>`)
+    
     
 })
 app.listen(4000, function(req, res){
