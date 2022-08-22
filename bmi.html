@@ -5,88 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    
+  
     <style>
-        
-
         body{
-            background-color: rgb(195, 187, 212)
+            background-color: rgb(93, 80, 80);
         }
-        h2{
-            font-family: 'Anton', sans-serif;
-            font-size: 3rem;
-            text-align: center;
-            margin-top:5rem;
 
+        .title{            
+            text-align: center;
+        }
+        form {
+            background-color: rgb(237, 209, 209);
+            margin: 5rem auto 0 auto;
+            width: 400px;
             
+            padding: 1em;
+            border: 5px solid #000000;
+            border-radius: 1em;
         }
-        
-        p {
-            color:black;
-        }
-        .inputs1{
-            font-family: cursive;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .inputs2{
-            text-align: center;
 
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        .submits1{
-            margin-right: 5.5rem;
+
+        li{
+            margin-top: 1em;
         }
-        .box{
-            margin:50px;
-            padding: 20px;
-            border: 15px solid black;
-            border-radius: 0%;
-            border-width: 20px;
-            background-color: lightgrey;
-        }
-        .submits1{
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
+
+        label {
             display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
+            width: 90px;
+            text-align: right;
         }
-        
-        </style>
-        </head>
+
+        input{
+            font-size: 1em;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        .button {
+            padding-left: 90px;
+        }
+
+        button {   
+            margin-left: .5em;
+        }
+        .text1,input{
+            font-family: cursive;
+        }
+    </style>
+       
 </head>
 <body>
-    <div class="box">
-        <h2>BMI Calculator</h2>
-      <div class="inputs2">
+   
+        <!-- <h2 class="title">BMI Calculator</h2> -->
+    <div class="img1">
     <form action="/" method="post">
-        
-        <div>
-            <input class="inputs1" type="text" name="Name" placeholder="Enter Name">
-        </div>
-        <div>
-            <input class="inputs1" type="text" name="Age" placeholder="Enter Age">
-        </div>
-        <div>
-            <input class="inputs1" type="text" name="height" placeholder="Enter height (m)">
-        </div>
-        <div>
-            <input class="inputs1" type="text" name="weight" placeholder="Enter weight (kg)">
-        </div>
-
-            <button class="submits1" type="submit" name="add" >BMI</button>
-    
-        
+        <h2 class="title">BMI Calculator</h2>
+        <ul class="text1">
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" name="Name" placeholder="Enter Name">
+            </li>
+            <li>
+                <label for="name">Age:</label>
+                <input type="text" name="Age" placeholder="Enter Age">
+            </li>
+            <li>
+                <label for="name">Height:</label>
+                <input type="text" name="height" placeholder="Enter height (m)">
+            </li>
+            <li>
+                <label for="name">Weight:</label>
+                <input type="text" name="weight" placeholder="Enter weight (kg)">
+            </li>
+            <li class="button">
+                <button class="submits1" type="submit" name="add" >BMI</button>
+            </li>
+            
+           </ul>
     </form>
     </div>
-    </div>
-    </body>
-      
+       
 </body>
 </html>
