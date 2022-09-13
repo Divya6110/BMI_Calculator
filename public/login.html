@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="box">
+        <h1>
+            <!-- <i class="glyphicon glyphicon-user"></i> -->
+            Login page
+        
+            
+            </h1>
+            <i class="fa-solid fa-user"></i>
+    <form action="/login" method="POST">
+        <label >Email</label>
+        
+        <input type="email" name="EMAIL" placeholder="Enter Email" required>
+        <br>
+        
+        <label>Password</label>
+        <input type="password" name="PASSWORD" placeholder="Enter Password" required>
+        <br>
+        
+        <button type="submit" name="login" >Login</button>
+        <!-- <input type="submit" name="login" value="Login" required> -->
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    <span>Create a new Account?</span><a href="/register">Register here</a>
+
+    </div>
+    
+</body>
+</html>
