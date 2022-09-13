@@ -1,0 +1,19 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "A SIMPLE BMI CALCULATOR",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Divya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.5.3",
+    "nodemon": "^2.0.19"
+  }
+}
